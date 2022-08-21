@@ -48,7 +48,8 @@ icq keys restore --chain stride wallet
 icq keys restore --chain gaia wallet
 ```
 
-```echo "[Unit]
+```
+echo "[Unit]
 Description=Relayer
 After=network.target
 
@@ -64,5 +65,6 @@ WantedBy=multi-user.target" > $HOME/relayerd.service
 sudo mv $HOME/relayerd.service /etc/systemd/system
 sudo systemctl daemon-reload
 sudo systemctl enable relayerd
-sudo systemctl restart relayerd && journalctl -u relayerd -f -o cat```
+sudo systemctl restart relayerd && journalctl -u relayerd -f -o cat
+```
 
