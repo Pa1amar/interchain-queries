@@ -1,11 +1,14 @@
-```cd ~
+```
+cd ~
 git clone https://github.com/Stride-Labs/interchain-queries.git && cd interchain-queries
 go build -a
-mv interchain-queries /usr/local/bin/interchain-queries```
-
-```cd && mkdir .icq```
-
-```echo "default_chain: stride
+mv interchain-queries /usr/local/bin/interchain-queries
+```
+```
+cd && mkdir .icq
+```
+```
+echo "default_chain: stride
 chains:
   gaia:
     key: wallet
@@ -37,10 +40,13 @@ chains:
     block-timeout: ""
     output-format: json
     sign-mode: direct
-cl: {}" > ~/.icq/config.yaml```
+cl: {}" > ~/.icq/config.yaml
+```
 
-```icq keys restore --chain stride wallet
-icq keys restore --chain gaia wallet```
+```
+icq keys restore --chain stride wallet
+icq keys restore --chain gaia wallet
+```
 
 ```echo "[Unit]
 Description=Relayer
