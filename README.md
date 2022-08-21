@@ -45,6 +45,8 @@ cl: {}" > ~/.icq/config.yaml
 
 ```
 interchain-queries keys restore --chain stride wallet
+```
+```
 interchain-queries keys restore --chain gaia wallet
 ```
 
